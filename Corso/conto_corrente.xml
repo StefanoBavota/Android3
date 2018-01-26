@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<banca>
+   <conto_corrente numero_conto="001">
+      <id_persona>
+        01
+      </id_persona>
+      <saldo>
+        +1000
+      </saldo>
+      <data_apertura>
+        22/01/2018
+      </data_apertura>
+      <operazioni tipologia="prelievo">
+        <data>
+            23/01/2018
+        </data>
+        <quantita>
+            100
+        </quantita>
+        <saldo_parziale>
+            900
+        </saldo_parziale>
+      </operazioni>
+   </conto_corrente>
+</banca>

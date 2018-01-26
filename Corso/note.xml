@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- la grammatica si trova all'interno di quel file -->
+<note xmlns:gr="http://www.w3.org/2001/XMLSchema-instance" gr:noNameSpaceSchemaLocation="note.xsd">
+<!-- noNameSpace si utilizza solo quando il file è sul nostro pc -->
+    <to>Tove</to>
+    <from sesso="femmina">Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+</note>

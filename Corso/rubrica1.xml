@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<rubrica xmlns:gr="http://www.w3.org/2001/XMLSchema-instance" gr:noNameSpaceSchemaLocation="rubrica1.xsd">
+   <persona id="001">
+      <cognome>
+        Bavota
+      </cognome>
+      <nome>
+        Stefano
+      </nome>
+      <telefono tipo="cell">
+        3331234567
+      </telefono>
+      <email tipologia="lavoro">
+        stefano.bavota@hotmail.com
+      </email>
+      <indirizzo>
+        <via>
+            strada colle renazzo
+        </via>
+        <citta>
+            Pescra
+        </citta>
+        <cap>
+            65129
+        </cap>
+        <stato>
+            Italia
+        </stato>
+      </indirizzo>
+   </persona>
+</rubrica>

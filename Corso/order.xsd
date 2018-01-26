@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ship_order" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+            <xs:attribute name="order_id" type="xs:integer" use="required" />
+            <xs:all>
+                <xs:element name="order_person" type="xs:string" />
+                <xs:element name="ship_to">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="name" type="xs:string" />
+                            <xs:element name="address" type="xs:string" />
+                            <xs:element name="city" type="xs:string" />
+                            <xs:element name="country" type="xs:string" />
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="item" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="title" type="xs:string" />
+                            <xs:element name="note" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                            <xs:element name="quantity"> <!-- si potrebbe usare anche positiveInteger ma c'è la differenza che prende anche lo 0 -->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="1" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="price" type="xs:decimal" />
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+
+                    

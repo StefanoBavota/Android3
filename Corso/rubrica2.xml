@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<rubrica>
+   <persona id="001">
+      <cognome>
+        Rossi
+      </cognome>
+      <nome>
+        Paolo
+      </nome>
+      <telefono tipo="cellulare">
+        123456789
+      </telefono>
+      <telefono tipo="ufficio">
+        525 652 235
+      </telefono>
+      <email tipologia="privato">
+        paolo.rossi@gmail.com
+      </email>
+      <email tipologia="ufficio">
+        ufficiopaolo.rossi@libero.it
+      </email>
+      <indirizzo>
+        <via>
+            Tal dei tali 45
+        </via>
+        <citta>
+            L'aquila
+        </citta>
+        <cap>
+            60000
+        </cap>
+        <stato>
+            Italia
+        </stato>
+      </indirizzo>
+   </persona>
+
+    <persona id="002">
+      <cognome>
+        Bianchi
+      </cognome>
+      <nome>
+        Maria
+      </nome>
+      <telefono tipo="ufficio">
+        987 654 321
+      </telefono>
+      <telefono tipo="fisso">
+        &lt;+39&gt; 085 252 536
+      </telefono>
+      <email tipologia="ufficio">
+        mariabianchi@tin.it
+      </email>
+      <indirizzo>
+        <via>
+            D'ascanio 75
+        </via>
+        <citta>
+            Pescra
+        </citta>
+        <cap>
+            65127
+        </cap>
+        <stato>
+            Italia
+        </stato>
+      </indirizzo>
+    </persona>
+</rubrica>

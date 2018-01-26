@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="rubrica">
+        <xs:complexType>
+            <xs:sequence> <!-- va bene anche all -->
+                <xs:element name="persona" type="xs:string" minOccurs="0" maxOccurs="5000">  <!-- min-max va da un un minimo obbligatorio di uno ad un massimo indefinito di Persone -->
+                    <xs:complexType>
+                        <xs:attribute name="id" type="xs:string" use="required" />
+                            <xs:all>
+                                <xs:element name="cognome" type="xs:string" />
+                                <xs:element name="nome" type="xs:string" minLenght="3" />
+                                <xs:element name="telefono" type="xs:string" minOccurs="1" maxOccurs="unbounded"> <!-- min-max va da un un minimo obbligatorio di uno ad un massimo indefinito di numeri telefonici -->
+                                    <xs:complexType>
+                                        <xs:attribute name="tipo" type="xs:string" use="required" />
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded">  <!-- min-max va da un un minimo obbligatorio di uno ad un massimo indefinito di email -->
+                                    <xs:complexType>
+                                        <xs:attribute name="tipologia" type="xs:string" use="default" value="privata" />
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="indirizzo" type="xs:string">
+                                    <xs:complexType>
+                                        <xs:all>
+                                            <xs:element name="via" type="xs:string" />
+                                            <xs:element name="citta" type="xs:string" />
+                                            <xs:element name="cap" type="xs:string" lenght="5"/> <!-- lenght è la lunghezza del cap ovvero 5 caratteri -->
+                                            <xs:element name="stato" type="xs:string" />
+                                        </xs:all>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:all>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
